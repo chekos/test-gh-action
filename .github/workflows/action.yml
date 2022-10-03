@@ -24,6 +24,5 @@ jobs:
 
       - name: Echo file name
         run: |
-          collname="textmessages"
-          filename="$(collname)_${{ matrix.operation }}-$(date +"%Y%m%d%H%M")"
+          filename=textmessages_${{ matrix.operation }}-$(date +"%Y%m%d%H%M")"
           echo "$filename"
