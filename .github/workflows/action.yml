@@ -24,4 +24,5 @@ jobs:
 
       - name: Echo file name
         run: |
-          echo `file_${{ matrix.operation }}-$(date +"%Y-%m-%d")`
+          filename=file_${{ matrix.operation }}-$(date +"%Y%m%d%H%M")
+          echo "$filename"
